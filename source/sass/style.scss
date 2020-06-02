@@ -1,0 +1,76 @@
+@import "global/normalize.scss";
+@import "global/vis-hidden.scss";
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.page-body {
+  padding: 0;
+  margin: 0;
+  min-width: 320px;
+
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #333333;
+  background: #ffffff;
+}
+
+.page-body__container {
+  width: 320px;
+  margin: 0 auto;
+
+  background: grey;
+}
+
+.link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.site-list__link {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.main-nav__text-image {
+  position: relative;
+  padding: 90px 20px 85px 20px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.page-intro {
+  background-color: #ffffff;
+
+  &__title {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    text-align: center;
+
+    margin: 0;
+    padding: 35px 30px 0 30px;
+    margin-bottom: 30px;
+
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: normal;
+    text-align: center;
+
+    margin: 0;
+    padding: 0 30px 22px 30px;
+  }
+}
