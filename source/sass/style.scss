@@ -1,5 +1,8 @@
-@import "global/normalize.scss";
-@import "global/vis-hidden.scss";
+@import "variables.scss";
+@import "scaffolding.scss";
+
+
+/* Scaffolding.scss File*/
 
 html {
   -webkit-box-sizing: border-box;
@@ -11,66 +14,43 @@ html {
   box-sizing: border-box;
 }
 
-.page-body {
-  padding: 0;
-  margin: 0;
+body {
   min-width: 320px;
+  margin: 0;
+  padding: 0;
 
-  font-family: "PT Sans Narrow", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-style: normal;
   text-transform: uppercase;
-  color: #333333;
-  background: #ffffff;
+  color: #000000;
+
+  background-color: #ffffff;
 }
 
-.page-body__container {
-  width: 320px;
-  margin: 0 auto;
+img {
+  max-width: 100%;
+  height: auto;
+}
 
+/* page-header*/
+
+.page-header {
+  width: 100%;
+  position: relative;
+
+  height: 56px;
   background: grey;
 }
 
-.link {
-  text-decoration: none;
-  color: #000000;
+.main-nav {
+  width: 320px;
 }
 
-.site-list__link {
-  font-weight: bold;
-  color: #ffffff;
-}
+.main-nav__list {
+  margin: 0;
+  padding: 0;
 
-.main-nav__text-image {
-  position: relative;
-  padding: 90px 20px 85px 20px;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-}
-
-.page-intro {
-  background-color: #ffffff;
-
-  &__title {
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: bold;
-    text-align: center;
-
-    margin: 0;
-    padding: 35px 30px 0 30px;
-    margin-bottom: 30px;
-
-  }
-
-  &__text {
-    font-size: 14px;
-    line-height: 26px;
-    font-weight: normal;
-    text-align: center;
-
-    margin: 0;
-    padding: 0 30px 22px 30px;
-  }
+  list-style: none;
 }
