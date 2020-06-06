@@ -1,3 +1,4 @@
+@import "normalize.scss";
 @import "variables.scss";
 @import "scaffolding.scss";
 
@@ -35,3 +36,6 @@ img {
 }
 
 /* page-header*/
+.page-header {
+  background: grey;
+}
